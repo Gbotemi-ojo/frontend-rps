@@ -4,6 +4,8 @@ let userhandsimage = document.getElementById("userhandsImage")
 let computerhandsimage = document.getElementById("computerHandsImage")
 let gamestate = document.getElementById("gameState")
 let score = 12
+let rules = document.getElementById("rulesPicture")
+let rulescontainer = document.getElementById("rulesContainer")
 function randomNumber(){
     let random = Math.floor(Math.random() * 3) + 1
     if(random ===1){
@@ -20,8 +22,10 @@ function randomNumber(){
 function playAgain(){
     interactionContainer.style.display = "flex"
     interactedContainer.style.display = "none"
+    rulescontainer.style.display = "flex"
 }
 function paper(){
+    rulescontainer.style.display = "none"
     let scoreboard = document.getElementById("scoreBoard")
 interactedContainer.style.display = "flex"
 interactionContainer.style.display = "none"
@@ -45,6 +49,7 @@ else if(computerhandsimage === "assets/scissors.png"){
 }
 
 function scissors(){
+    rulescontainer.style.display = "none"
     let scoreboard = document.getElementById("scoreBoard")
     interactedContainer.style.display = "flex"
     interactionContainer.style.display = "none" 
@@ -67,6 +72,7 @@ function scissors(){
     }
 }
 function rock(){
+    rulescontainer.style.display = "none"
     let scoreboard = document.getElementById("scoreBoard")
     interactedContainer.style.display = "flex"
     interactionContainer.style.display = "none"
@@ -87,4 +93,16 @@ function rock(){
         gamestate.textContent = "YOU WIN!"
         scoreboard.textContent = score
     }
+}
+function rulesPopup(){
+    rules.style.display = "flex"
+    interactionContainer.style.display = "none"
+    interactedContainer.style.display = "none"
+    rulescontainer.style.display = "none"
+}
+function reset(){
+    rules.style.display = "none"
+    interactionContainer.style.display = "flex"
+    interactedContainer.style.display = "none"
+    rulescontainer.style.display = "flex"
 }
