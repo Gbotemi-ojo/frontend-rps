@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+ background-color:rgb(20, 21, 57)
+}
+.Thegame{
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+.header{
+    display:flex;
+    margin-top: 35px;
+    border: 1px solid white;
+    width: 500px;
+    height: 110px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerContainer{
+    min-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img{
+    width: 120px;
+    margin-left: 20px;
+}
+.scores{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.scores :first-child{
+    font-size: 10px;
+    letter-spacing: 2px;
+    color:rgb(10, 12, 63)
+}
+.scores :last-child{
+    font-size: 35px;
+    color: rgb(126, 117, 117);
+    font-weight: 600;
+}
+.interaction{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background: url(assets/triangle.png);
+    background-position:center ;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.interaction img{
+    width: 140px;
+}
+#interactionContainer{
+    display: flex;
+    min-width:90vw;
+    align-items: center;
+    justify-content: center;
+}
+.paper{
+margin-right: 15px;
+}
+.scissors{
+margin-right: 15px;
+}
+.interacted{
+display: flex;
+align-items: center;
+width: 70vw;
+justify-content: space-around;
+height: 65vh;
+}
+#interactedContainer{
+    display: none;
+    align-items: center;
+    height: 80vh;
+    width: 70vw;
+}
+.userInput{
+    display: flex;
+    flex-direction: column;
+    height: 53vh;
+    align-items: center;
+}
+.userInput img{
+ margin-top: 10vh;
+ width: 200px;
+}
+.userInput p{
+    color: white;
+}
+.winorlose{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.winorlose p{
+    color: white;
+    font-size: 30px;
+}
+.winorlose button{
+    padding: 8px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.computerInput{
+    display: flex;
+    flex-direction: column;
+    height: 53vh;
+    align-items: center; 
+}
+.computerInput img{
+    margin-top: 10vh;
+    width: 200px;
+}
+.computerInput p{
+    color: white;  
+}
