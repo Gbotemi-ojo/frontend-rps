@@ -3,7 +3,7 @@ let interactionContainer = document.getElementById("interactionContainer")
 let userhandsimage = document.getElementById("userhandsImage")
 let computerhandsimage = document.getElementById("computerHandsImage")
 let gamestate = document.getElementById("gameState")
-let score = 12
+let score = 0
 let rules = document.getElementById("rulesPicture")
 let rulescontainer = document.getElementById("rulesContainer")
 function randomNumber(){
