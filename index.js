@@ -9,13 +9,13 @@ let rulescontainer = document.getElementById("rulesContainer")
 function randomNumber(){
     let random = Math.floor(Math.random() * 3) + 1
     if(random ===1){
-        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/rock.png"   
+        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/Rock.png"   
     }
     else if(random === 2){
-        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/paper.png"  
+        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/Paper.png"  
     }
     else if(random === 3){
-        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/scissors.png"  
+        computerhandsimage = document.getElementById("computerHandsImage").src = "assets/Scissors.png"  
     }
 
 }
