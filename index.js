@@ -29,19 +29,19 @@ function paper(){
     let scoreboard = document.getElementById("scoreBoard")
 interactedContainer.style.display = "flex"
 interactionContainer.style.display = "none"
-let userhandsimage = document.getElementById("userhandsImage").src = "assets/paper.png"
+userhandsimage = document.getElementById("userhandsImage").src = "assets/Paper.png"
 randomNumber()
-if(computerhandsimage === "assets/paper.png"){
+if(computerhandsimage === "assets/Paper.png"){
     score += 0
 gamestate.textContent = "IT'S A TIE"
 scoreboard.textContent = score
 }
-else if(computerhandsimage === "assets/rock.png"){
+else if(computerhandsimage === "assets/Rock.png"){
     score += 1
     gamestate.textContent = "YOU WIN!"
     scoreboard.textContent = score
 }
-else if(computerhandsimage === "assets/scissors.png"){
+else if(computerhandsimage === "assets/Scissors.png"){
     score -= 1 
     gamestate.textContent = "YOU LOSE"
     scoreboard.textContent = score
@@ -53,19 +53,19 @@ function scissors(){
     let scoreboard = document.getElementById("scoreBoard")
     interactedContainer.style.display = "flex"
     interactionContainer.style.display = "none" 
-    let userhandsimage = document.getElementById("userhandsImage").src = "assets/scissors.png" 
+    userhandsimage = document.getElementById("userhandsImage").src = "assets/Scissors.png" 
     randomNumber()
-    if(computerhandsimage === "assets/paper.png"){
+    if(computerhandsimage === "assets/Paper.png"){
         score += 1
     gamestate.textContent = "YOU WIN!"
     scoreboard.textContent = score
     }
-    else if(computerhandsimage === "assets/rock.png"){
+    else if(computerhandsimage === "assets/Rock.png"){
         score -= 1
         gamestate.textContent = "YOU LOSE!"
         scoreboard.textContent = score
     }
-    else if(computerhandsimage === "assets/scissors.png"){
+    else if(computerhandsimage === "assets/Scissors.png"){
         score += 0 
         gamestate.textContent = "IT'S A TIE"
         scoreboard.textContent = score
@@ -76,19 +76,19 @@ function rock(){
     let scoreboard = document.getElementById("scoreBoard")
     interactedContainer.style.display = "flex"
     interactionContainer.style.display = "none"
-    let userhandsimage = document.getElementById("userhandsImage").src = "assets/rock.png"
+    userhandsimage = document.getElementById("userhandsImage").src = "assets/Rock.png"
     randomNumber()
-    if(computerhandsimage === "assets/paper.png"){
+    if(computerhandsimage === "assets/Paper.png"){
         score -= 1
     gamestate.textContent = "YOU LOSE"
     scoreboard.textContent = score
     }
-    else if(computerhandsimage === "assets/rock.png"){
+    else if(computerhandsimage === "assets/Rock.png"){
         score += 0
         gamestate.textContent = "IT'S A TIE"
         scoreboard.textContent = score
     }
-    else if(computerhandsimage === "assets/scissors.png"){
+    else if(computerhandsimage === "assets/Scissors.png"){
         score += 1 
         gamestate.textContent = "YOU WIN!"
         scoreboard.textContent = score
