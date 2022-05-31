@@ -3,6 +3,7 @@ let interactionContainer = document.getElementById("interactionContainer")
 let userhandsimage = document.getElementById("userhandsImage")
 let computerhandsimage = document.getElementById("computerHandsImage")
 let gamestate = document.getElementById("gameState")
+let gamestatemobile = document.getElementById("gameStateMobile")
 let score = 0
 let rules = document.getElementById("rulesPicture")
 let rulescontainer = document.getElementById("rulesContainer")
@@ -34,16 +35,20 @@ randomNumber()
 if(computerhandsimage === "assets/Paper.png"){
     score += 0
 gamestate.textContent = "IT'S A TIE"
+gamestatemobile.textContent = "IT'S A TIE"
+
 scoreboard.textContent = score
 }
 else if(computerhandsimage === "assets/Rock.png"){
     score += 1
     gamestate.textContent = "YOU WIN!"
+    gamestatemobile.textContent = "YOU WIN!"
     scoreboard.textContent = score
 }
 else if(computerhandsimage === "assets/Scissors.png"){
     score -= 1 
     gamestate.textContent = "YOU LOSE"
+    gamestatemobile.textContent = "YOU LOSE"
     scoreboard.textContent = score
 }
 }
@@ -58,16 +63,19 @@ function scissors(){
     if(computerhandsimage === "assets/Paper.png"){
         score += 1
     gamestate.textContent = "YOU WIN!"
+    gamestatemobile.textContent = "YOU WIN!"
     scoreboard.textContent = score
     }
     else if(computerhandsimage === "assets/Rock.png"){
         score -= 1
         gamestate.textContent = "YOU LOSE!"
+        gamestatemobile.textContent = "YOU LOSE!"
         scoreboard.textContent = score
     }
     else if(computerhandsimage === "assets/Scissors.png"){
         score += 0 
         gamestate.textContent = "IT'S A TIE"
+        gamestatemobile.textContent = "IT'S A TIE"
         scoreboard.textContent = score
     }
 }
@@ -81,16 +89,19 @@ function rock(){
     if(computerhandsimage === "assets/Paper.png"){
         score -= 1
     gamestate.textContent = "YOU LOSE"
+    gamestatemobile.textContent = "YOU LOSE"
     scoreboard.textContent = score
     }
     else if(computerhandsimage === "assets/Rock.png"){
         score += 0
         gamestate.textContent = "IT'S A TIE"
+        gamestatemobile.textContent = "IT'S A TIE"
         scoreboard.textContent = score
     }
     else if(computerhandsimage === "assets/Scissors.png"){
         score += 1 
         gamestate.textContent = "YOU WIN!"
+        gamestatemobile.textContent = "YOU WIN!"
         scoreboard.textContent = score
     }
 }
