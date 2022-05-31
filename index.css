@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
- background-color:rgb(20, 21, 57)
+background: radial-gradient(#1F3756, #141539);;
 }
 .Thegame{
     display: flex;
