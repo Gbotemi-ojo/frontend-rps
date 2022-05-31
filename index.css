@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding: 0;
@@ -46,11 +45,11 @@ background: radial-gradient(#1F3756, #141539);;
 .scores :first-child{
     font-size: 10px;
     letter-spacing: 2px;
-    color:rgb(10, 12, 63)
+    color: #2A46C0;
 }
 .scores :last-child{
     font-size: 35px;
-    color: rgb(126, 117, 117);
+    color: #2f3346;
     font-weight: 600;
 }
 .interaction{
@@ -92,7 +91,6 @@ height: 65vh;
     align-items: center;
     height: 80vh;
     width: 70vw;
-
 }
 .userInput{
     display: flex;
@@ -192,7 +190,6 @@ margin-top: 20px;
         align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
-    
     }
     #interactedContainer{
         width: 100vw;
