@@ -4,9 +4,21 @@ let userhandsimage = document.getElementById("userhandsImage")
 let computerhandsimage = document.getElementById("computerHandsImage")
 let gamestate = document.getElementById("gameState")
 let gamestatemobile = document.getElementById("gameStateMobile")
-let score = 0
 let rules = document.getElementById("rulesPicture")
 let rulescontainer = document.getElementById("rulesContainer")
+let clickPaper = document.querySelector(".paper")
+let clickRock = document.querySelector(".rock")
+let clickScissors = document.querySelector(".Scissors")
+let rulesPop = document.getElementById("rules")
+let playagain = document.querySelectorAll(".playagain")
+clickPaper.addEventListener("click",paper)
+clickRock.addEventListener("click",rock)
+clickScissors.addEventListener("click",scissors)
+rulesPop.addEventListener("click",rulesPopup)
+playagain.forEach(button => {
+    button.addEventListener("click",playAgain)
+});
+let score = 0
 function randomNumber(){
     let random = Math.floor(Math.random() * 3) + 1
     if(random ===1){
@@ -117,3 +129,4 @@ function reset(){
     interactedContainer.style.display = "none"
     rulescontainer.style.display = "flex"
 }
+// function reset() is used to take the game back to its initial state
